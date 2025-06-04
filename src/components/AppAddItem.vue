@@ -5,7 +5,7 @@
 
 <script setup>
 import {ref} from 'vue'
-import {useStockStore} from '../stores/stockStore'
+import {useStockStore} from '@/stores/stockStore'
 
 const stockStore = useStockStore()
 const newItemName = ref('')

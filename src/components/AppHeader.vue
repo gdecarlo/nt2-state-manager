@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { useStockStore } from '../stores/stockStore'
+import { useStockStore } from '@/stores/stockStore'
 
 const stockStore = useStockStore()
 defineProps({

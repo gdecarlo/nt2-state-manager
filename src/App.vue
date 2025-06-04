@@ -1,7 +1,7 @@
 <script setup>
-import AppHeader from './components/AppHeader.vue'
-import AppAddItem from './components/AppAddItem.vue'
-import AppItemList from './components/AppItemList.vue'
+import AppHeader from '@/components/AppHeader.vue'
+import AppAddItem from '@/components/AppAddItem.vue'
+import AppItemList from '@/components/AppItemList.vue'
 </script>
 
 <template>
@@ -9,15 +9,17 @@ import AppItemList from './components/AppItemList.vue'
     <AppHeader appName="Ejemplo de uso de Pinia 🍍"></AppHeader>
     <div id="main">
       <article>
-        <app-add-item></app-add-item>
+        <AppAddItem></AppAddItem>
       </article>
-      <nav><app-item-list></app-item-list></nav>
+      <nav>
+        <AppItemList></AppItemList>
+      </nav>
 
     </div>
 
   </div>
 
-  
+
 </template>
 
 <style scoped>
@@ -45,7 +47,8 @@ import AppItemList from './components/AppItemList.vue'
 #main>aside {
   flex: 0 0 20vw;
   background: var(--vue-gray-lighter);
-  border-right: 1px solid rgba(66, 184, 131, 0.2); /* Vue green with opacity */
+  border-right: 1px solid rgba(66, 184, 131, 0.2);
+  /* Vue green with opacity */
 }
 
 #main>nav {
