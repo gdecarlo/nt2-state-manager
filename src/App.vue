@@ -44,7 +44,8 @@ import AppItemList from './components/AppItemList.vue'
 #main>nav,
 #main>aside {
   flex: 0 0 20vw;
-  background: beige;
+  background: var(--vue-gray-lighter);
+  border-right: 1px solid rgba(66, 184, 131, 0.2); /* Vue green with opacity */
 }
 
 #main>nav {
@@ -52,7 +53,8 @@ import AppItemList from './components/AppItemList.vue'
 }
 
 header {
-  background: yellowgreen;
+  background: var(--vue-green);
+  color: white;
   height: 20vh;
 }
 

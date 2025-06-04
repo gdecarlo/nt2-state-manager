@@ -24,10 +24,10 @@ defineProps({
 
 <style scoped>
 .app-header {
-    background-color: #f8f9fa;
+    background-color: var(--vue-green);
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--vue-green-dark);
 }
 
 nav {
@@ -41,7 +41,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: white;
 }
 
 .stats {
@@ -51,13 +51,13 @@ nav {
 }
 
 .stats-label {
-    color: #555;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .article-count {
     font-weight: bold;
-    color: #007bff;
-    background-color: #e7f1ff;
+    color: var(--vue-green);
+    background-color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
     min-width: 2rem;

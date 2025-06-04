@@ -22,26 +22,28 @@ ul {
 
 li {
     padding: 1em 1.2em;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid rgba(66, 184, 131, 0.2);
     margin-bottom: 0.7em;
     border-radius: 8px;
     transition: all 0.3s ease;
-    background-color: #f9f9f9;
+    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
+    border-left: 3px solid var(--vue-green);
 }
 
 li:hover {
-    background-color: #f0f0f0;
+    background-color: var(--vue-gray-lighter);
     cursor: pointer;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-left-color: var(--vue-green-dark);
 }
 
 p {
     font-weight: bold;
-    color: #555;
+    color: var(--vue-gray);
     margin-top: 1.5em;
     font-size: 1.1em;
     text-align: center;

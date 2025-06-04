@@ -25,18 +25,26 @@ input[type="text"] {
     width: calc(100% - 2em);
     margin-right: 0.5em;
     margin-bottom: 0.5em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--vue-green);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(66, 184, 131, 0.2);
 }
 
 button {
     padding: 0.8em 1.2em;
     border: none;
     border-radius: 4px;
-    background-color: #28a745;
+    background-color: var(--vue-green);
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: var(--vue-green-dark);
 }
 </style>
