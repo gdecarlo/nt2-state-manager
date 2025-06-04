@@ -1,21 +1,65 @@
 <script setup>
+import AppHeader from './components/AppHeader.vue'
+import AppAddItem from './components/AppAddItem.vue'
+import AppItemList from './components/AppItemList.vue'
 </script>
 
 <template>
-  <h1>Template Vue 3.4</h1>
+  <div class="container">
+    <AppHeader appName="Ejemplo de uso de Pinia 🍍"></AppHeader>
+    <div id="main">
+      <article>
+        <app-add-item></app-add-item>
+      </article>
+      <nav><app-item-list></app-item-list></nav>
+
+    </div>
+
+  </div>
+
+  
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+* {
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+#main {
+  display: flex;
+  flex: 1;
+}
+
+#main>article {
+  flex: 1;
+}
+
+#main>nav,
+#main>aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+
+#main>nav {
+  order: -1;
+}
+
+header {
+  background: yellowgreen;
+  height: 20vh;
+}
+
+header,
+article,
+nav,
+aside {
+  padding: 1em;
 }
 </style>
